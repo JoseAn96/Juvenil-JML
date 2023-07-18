@@ -1,0 +1,57 @@
+:root{
+    --red:#e14942;
+    --yellow:#ffc130; 
+    --grey:#828282; 
+    --greylight:#ebebeb;
+    --darkgrey:#383838; 
+}
+
+
+/* nav */
+.secondNav {
+    display: flex;
+    align-items: center;
+    background-color: var(--red);
+    padding: 10px; 
+    justify-content: space-between;
+}
+
+.sloganContainer {
+    display: flex;
+    align-items: center;
+}
+
+.slogan {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    align-items:center;
+}
+
+
+.social-icons a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.social-icons a i {
+    font-size: 20px;
+}
+
+
+.footer-f {
+    display: flex;
+    justify-content: center;
+    height: 3.5em;
+    background-color: #3c4141;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    margin-top: 3em;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    cursor: default;
+}
