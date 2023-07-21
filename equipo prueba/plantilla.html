@@ -1,39 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plantilla</title>
+  <title>Juvenil JML</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/plantilla.css">
   <link rel="icon" href="img/logo.jpeg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/plantilla.css">
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d6cfdd6af8.js" crossorigin="anonymous"></script>
+
+
+  <!-- Bootstrap CSS v5.2.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body> 
 
-
-  <nav class="navv">
+<body>
+  <a href="index.html">
     <img class="lg" src="img/logo.jpeg" alt="Logo">
-    <ul>
-        <li><a id="a1" class="aaa" href="#scc1">Inicio</a></li>
-        <li><a id="a2"  class="aaa" href="Plantilla Jugadores.html">Plantilla</a></li>
-        <li><a id="a3"  class="aaa" href="#txtSc">Patrocinadores</a></li> 
-        <li><a id="a5"  class="aaa" href="#txtSs"> Nosotros</a></li> 
-        <li><a id="a4"  class="aaa" data-bs-toggle="modal" data-bs-target="#myModal"> </a></li> 
-    </ul> 
-    <button class="burguer">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </button>
-</nav>
-
+  </a>
+  <nav class="navbar navbar-expand-lg myNav">
+    <div class="container-fluid d-flex justify-content-end">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header myNav">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Jesús María - Labrador</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body myNav">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activ" aria-current="page" href="plantilla.html">Plantilla</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="patrocinadores.html">Patrocinadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
   <nav class="secondNav">
 
     <div class="sloganContainer">
@@ -50,130 +66,25 @@
     </div>
   </nav>
 
-<div class="tittle">
-  <h1>Plantilla</h1>
-</div>   
-
-<nav class="teamNav ">
-  <ul>
-    <li><a id="a1" class="aaa" href="#">Porteros</a></li>
-    <li><a id="a2"  class="aaa" href="#">Defensas</a></li>
-    <li><a id="a3"  class="aaa" href="#">CentroCampistas</a></li> 
-    <li><a id="a5"  class="aaa" href="#">Delanteros </a></li> 
-    <li><a id="a6"  class="aaa" href="#">Cuerpo Técnico</a></li> 
-    <li><a id="a4"  class="aaa" data-bs-toggle="modal" data-bs-target="#myModal"> </a></li> 
-</ul> 
-</nav>
-
-  <section>
-    <div class="container flow-content">
-     
-      <ul role="list" class="grid">
-        <li>
-          <article class="card" data-visible="false">
-            <div class="card__front flow-content">
-              <img class="card__img mx-auto" src="img/teamPlayerJunior.jpg" />
-              <div class="flow-content" data-spacing="sm">
-                <p class="card__name">Junior Osorio </p>
-             
-              </div>
-            </div>
-            <div class="card__back flow-content">
-              <p class="card__name"></p>
-              <p>Edad:</p> 
-              <p>18 años</p>
-              <p>Posición:</p> 
-              <p>Lateral Derecho</p>
-            </div>
-            <footer class="card__footer">
-              <button data-card-controller class="card__toggle">
-                <i class="fa-solid fa-plus card__toggle-icon"></i>
-              </button>
-            </footer>
-          </article>
-        </li>
-        <li>
-          <article class="card" data-visible="false">
-            <div class="card__front flow-content">
-              <img class="card__img mx-auto" src="img/teamPlayerAntonio.jpg" />
-              <div class="flow-content" data-spacing="sm">
-                <p class="card__name">Antonio Jiménez</p>
-                
-              </div>
-            </div>
-            <div class="card__back flow-content">
-              <p class="card__name"></p>
-              <p>Edad:</p> 
-              <p>18 años</p>
-              <p>Posición:</p> 
-              <p>Defensa Central</p>
-              
-            </div>
-            <footer class="card__footer">
-              <button data-card-controller class="card__toggle">
-                <i class="fa-solid fa-plus card__toggle-icon"></i>
-              </button>
-            </footer>
-          </article>
-        </li>
-        <li>
-          <article class="card" data-visible="false">
-            <div class="card__front flow-content">
-              <img class="card__img mx-auto" src="img/teamPlayerJohnny.jpg"/>
-              <div class="flow-content" data-spacing="sm">
-                <p class="card__name">Johnny Salazar</p>
-              </div>
-            </div>
-            <div class="card__back flow-content">
-              <p class="card__name"></p>
-              <p>Edad:</p> 
-              <p>19 años</p>
-              <p>Posición:</p> 
-              <p>Defensa Central</p>
-            </div>
-            <footer class="card__footer">
-              <button data-card-controller class="card__toggle">
-                <i class="fa-solid fa-plus card__toggle-icon"></i>
-              </button>
-            </footer>
-          </article>
-        </li>   
-      </ul>
-    </div> 
+  <main>
+    <div class="tittle">
+      <h1>Plantilla</h1>
+    </div>
+  </main>
 
 
-    <li>
-      <article class="card" data-visible="false">
-        <div class="card__front flow-content">
-          <img class="card__img mx-auto" src="img/teamPlayerGerald.jpg" />
-          <div class="flow-content" data-spacing="sm">
-            <p class="card__name">Gerald Herrera</p>
-          
-          </div>
-        </div>
-        <div class="card__back flow-content">
-          <p class="card__name"></p>
-          <p>Edad:</p> 
-          <p>19 años</p>
-          <p>Posición:</p> 
-          <p>Defensa Central</p>
-          
-        </div>
-        <footer class="card__footer">
-          <button data-card-controller class="card__toggle">
-            <i class="fa-solid fa-plus card__toggle-icon"></i>
-          </button>
-        </footer>
-      </article>
-    </li>
+  <footer class=" footer-f container-fluid">
+    <div class="row">
+      <div class="col">
+        <p class="txtFoo">Juvenil JML &copy; 2023 Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
 
-  </section>
-  <script src="js/plantilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-   </script>
 </body>
-</html>
 
 </html>
