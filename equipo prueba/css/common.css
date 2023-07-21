@@ -1,44 +1,79 @@
-:root{
-    --red:#e14942;
-    --yellow:#ffc130; 
-    --grey:#828282; 
-    --greylight:#ebebeb;
-    --darkgrey:#383838; 
+:root {
+    --red: #e14942;
+    --yellow: #ffc130;
+    --grey: #828282;
+    --greylight: #ebebeb;
+    --darkgrey: #383838;
+}
+
+.myNav {
+    background-color: var(--grey);
+}
+
+/* Estilos para los enlaces del navbar */
+.navbar-nav .nav-link {
+    color: white;
+}
+
+/* Estilos para el enlace activo del navbar */
+.navbar-nav .nav-link.activ {
+    color:  var(--yellow);
+}
+
+/* Opcional: Estilos adicionales para los enlaces cuando se les pasa el mouse (hover) */
+.navbar-nav .nav-link:hover {
+    color: #EAEAEA;
 }
 
 
-/* nav */
+.lg {
+    width: auto;
+    height: 100px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 1;
+}
+
 .secondNav {
     display: flex;
     align-items: center;
     background-color: var(--red);
-    padding: 10px; 
+    padding: 10px;
     justify-content: space-between;
+    padding-right: 45px;
 }
 
 .sloganContainer {
     display: flex;
     align-items: center;
+    margin-left: 150px;
+    margin-right: 10px;
 }
 
 .slogan {
     font-size: 18px;
     color: #ffffff;
+    display: contents;
 }
 
 .social-icons {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 
 .social-icons a {
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
+
 }
 
 .social-icons a i {
-    font-size: 20px;
+    font-size: 28px;
+}
+
+.social-icons a:not(:last-child) {
+    margin-right: 20px;
 }
 
 
@@ -46,8 +81,8 @@
     display: flex;
     justify-content: center;
     height: 3.5em;
-    background-color: #3c4141;
-    color: #fff;
+    background-color: var(--greylight);
+    color: black;
     text-align: center;
     align-items: center;
     margin-top: 3em;
